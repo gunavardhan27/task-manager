@@ -1,0 +1,26 @@
+h1{
+    
+    font-weight: 500;
+}
+.myButton {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* Text color */
+    background-color: #3498db; /* Background color */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+
+  /* Change background color on hover */
+  .myButton:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+  }
+  .div{
+    color: #fff;
+  }
