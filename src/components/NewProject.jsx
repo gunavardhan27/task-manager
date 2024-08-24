@@ -31,11 +31,11 @@ export default function NewProject({handle}){
     return (
         <>
         <Modal ref={modal} />
-        <div>
-            <button onClick={handleInput}>Save</button>
-            <button>Cancel</button>
-        </div>
-        <div>
+        <div className="bg-slate-600 p-4 flex-col items-left justify-between gap-3 w-full">
+            <div className="flex flex-row items-start justify-between">
+            <button className="bg-blue-500 p-2 rounded-md" onClick={handleInput}>Save</button>
+            <button className="bg-red-700 p-2 rounded-md">Cancel</button>
+            </div>
             <Input type='text' ref={title} label='title' />
             <Input ref={description} label='description' isTextArea={true} />
             <Input type='date' ref={dueDate} label='due-date' />

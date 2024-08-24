@@ -12,8 +12,9 @@ export default function Tasks({addNewTaskHere,onDelete,content}){
         <div>
             <NewTask tasks={tasks}  addTask={addNewTaskHere} />
             
-            {content.length > 0 ? <ul>{content.map((task)=><li key={task.id}><span>{task.data}</span> <button onClick={()=>onDelete(task.id)}>
-                delete</button></li>)}</ul>
+            {content.length > 0 ? <ul>{content.map((task)=><li key={task.id}><span>{task.data}</span> <button className="bg-red-600 p-2
+            rounded-md" onClick={()=>onDelete(task.id)}>
+                delete sub-task</button></li>)}</ul>
                 : <p>Add some Tasks</p>}
         </div>
     )
